@@ -1,0 +1,15 @@
+title Sequence Diagram
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: HTML-code 201
+
+note over browser:
+browser executes the event handler
+that renders and adds the new added
+note at the bottom of the notes list
+end note
